@@ -37,3 +37,35 @@ console.log(Boolean(null));         // false
 console.log(Boolean(undefined));    // false
 console.log(Boolean(NaN));          // false
 //alag alag line mein code add krna 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log(true, Boolean(true));
+console.log(1, Boolean(1));
+console.log(-1, Boolean(-1));
+console.log("hello", Boolean("hello"));
+console.log("0", Boolean("0"));
+console.log("false", Boolean("false"));     // non-empty strings are truthy
+console.log([], Boolean([]));               // empty array
+console.log({}, Boolean({}));               // empty object
+console.log(function(){}, Boolean(function(){})); // any function
+console.log(42, Boolean(42));
+console.log(" ", Boolean(" "));             // string with a space
+console.log(Infinity, Boolean(Infinity));
+console.log(-Infinity, Boolean(-Infinity));
