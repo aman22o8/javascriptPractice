@@ -23,6 +23,8 @@ NaN occurs when there is error/failure in Mathematical operation(0/0 or sqrt(-1)
 
 
 */
+
+/* 
 console.log(NaN===NaN)
 console.log(Object.is(NaN,NaN))
 
@@ -50,4 +52,53 @@ function compute(n1,n2,whichoperator){
 
 let result= compute(-25,3,"roots")
 console.log(result)
+
+*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+function OTPgeneration(length=6){
+    let OTP=''
+    for(let i=0;i<length;i++){
+       
+        OTP += Math.floor(Math.random()*10)
+    }
+    return OTP
+}
+
+console.log(OTPgeneration()) 
+
+
+function differentOTP(numberoftimes=4){
+    for (let ntimes = 0; ntimes < numberoftimes; ntimes++) {
+        
+        console.log(OTPgeneration(length=7))
+        console.log(`This is unique OTP generation ${UniqueOTP()}`)
+    }
+}
+
+differentOTP(numberoftimes=4)
+
+
+/*------------------------------------------------------------------------ */
+// Unique OTP Generation
+function UniqueOTP(le=7){
+    let OTPUNI=''
+
+while (OTPUNI.length<le) {
+    randomNumber=Math.floor(Math.random()*10)
+    if (OTPUNI.includes(String(randomNumber))) {
+        continue //Continue will skip this loop yhi se hi upr hchla jaega
+    } else {
+        OTPUNI+=randomNumber
+    }
+    
+}
+
+return OTPUNI
+}
+
+
+
 
