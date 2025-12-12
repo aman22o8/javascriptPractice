@@ -89,7 +89,7 @@ function UniqueOTP(le=7){
 while (OTPUNI.length<le) {
     randomNumber=Math.floor(Math.random()*10)
     if (OTPUNI.includes(String(randomNumber))) {
-        continue //Continue will skip this loop yhi se hi upr hchla jaega
+        continue //Continue will skip this loop yhi se hi upr chla jaega
     } else {
         OTPUNI+=randomNumber
     }
