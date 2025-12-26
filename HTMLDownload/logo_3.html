@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Logo Options</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #0a0a0a;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        h2 {
+            color: #61dafb;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        .logo-container {
+            background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+        
+        .logo-title {
+            color: #f7df1e;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+        
+        .download-hint {
+            color: #61dafb;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            padding: 15px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>✨ Fresh Logo Concepts ✨</h2>
+    
+    <div class="grid">
+        <!-- Logo 1: Neon Sign Style -->
+        <div class="logo-container">
+            <div class="logo-title">Neon Sign</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="neon">
+                        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#8338ec;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#3a86ff;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <rect width="400" height="400" fill="#0a0014"/>
+                
+                <!-- Neon tubes background -->
+                <rect x="50" y="50" width="300" height="300" rx="20" fill="none" stroke="#8338ec" stroke-width="2" opacity="0.2"/>
+                
+                <!-- Main neon text -->
+                <text x="200" y="160" font-family="'Arial Black', sans-serif" font-size="100" fill="none" stroke="url(#neonGrad)" stroke-width="4" text-anchor="middle" font-weight="900" filter="url(#neon)">a</text>
+                
+                <text x="200" y="240" font-family="'Courier New', monospace" font-size="40" fill="none" stroke="#ff006e" stroke-width="3" text-anchor="middle" font-weight="bold" filter="url(#neon)">.dev</text>
+                
+                <text x="200" y="300" font-family="'Courier New', monospace" font-size="36" fill="none" stroke="#3a86ff" stroke-width="3" text-anchor="middle" font-weight="bold" filter="url(#neon)">.js</text>
+                
+                <!-- Neon dots -->
+                <circle cx="90" cy="90" r="5" fill="#ff006e" filter="url(#neon)"/>
+                <circle cx="310" cy="90" r="5" fill="#3a86ff" filter="url(#neon)"/>
+                <circle cx="90" cy="310" r="5" fill="#8338ec" filter="url(#neon)"/>
+                <circle cx="310" cy="310" r="5" fill="#ff006e" filter="url(#neon)"/>
+            </svg>
+        </div>
+
+        <!-- Logo 2: Cyberpunk Hexagon -->
+        <div class="logo-container">
+            <div class="logo-title">Cyberpunk Tech</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0096ff;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="cyberGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff0080;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="cyberGlow">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <rect width="400" height="400" fill="#000"/>
+                
+                <!-- Outer hexagon -->
+                <polygon points="200,60 310,120 310,240 200,300 90,240 90,120" 
+                         fill="none" 
+                         stroke="url(#cyberGrad)" 
+                         stroke-width="4"
+                         filter="url(#cyberGlow)"/>
+                
+                <!-- Inner hexagon -->
+                <polygon points="200,90 280,140 280,220 200,270 120,220 120,140" 
+                         fill="#0a0a0a" 
+                         stroke="url(#cyberGrad2)" 
+                         stroke-width="3"
+                         filter="url(#cyberGlow)"/>
+                
+                <!-- A with tech cuts -->
+                <path d="M 200 140 L 235 215 L 220 215 L 214 200 L 186 200 L 180 215 L 165 215 Z M 200 160 L 190 188 L 210 188 Z" 
+                      fill="url(#cyberGrad)" 
+                      filter="url(#cyberGlow)"/>
+                
+                <!-- Tech lines -->
+                <line x1="150" y1="180" x2="170" y2="180" stroke="url(#cyberGrad2)" stroke-width="2" opacity="0.8"/>
+                <line x1="230" y1="180" x2="250" y2="180" stroke="url(#cyberGrad2)" stroke-width="2" opacity="0.8"/>
+                
+                <!-- JS badge -->
+                <rect x="175" y="225" width="50" height="25" rx="5" fill="url(#cyberGrad2)" filter="url(#cyberGlow)"/>
+                <text x="200" y="243" font-family="'Arial', sans-serif" font-size="14" fill="#000" text-anchor="middle" font-weight="900">JS</text>
+                
+                <!-- Bottom text -->
+                <text x="200" y="340" font-family="'Orbitron', 'Arial Black', sans-serif" font-size="18" fill="url(#cyberGrad)" text-anchor="middle" font-weight="700">AMAN.DEV</text>
+                
+                <!-- Corner accents -->
+                <circle cx="80" cy="110" r="3" fill="url(#cyberGrad2)"/>
+                <circle cx="320" cy="110" r="3" fill="url(#cyberGrad)"/>
+                <circle cx="80" cy="250" r="3" fill="url(#cyberGrad)"/>
+                <circle cx="320" cy="250" r="3" fill="url(#cyberGrad2)"/>
+            </svg>
+        </div>
+
+        <!-- Logo 3: Pixel Art Retro -->
+        <div class="logo-container">
+            <div class="logo-title">Pixel Retro</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="pixelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffd93d;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <rect width="400" height="400" fill="#1a1a2e"/>
+                
+                <!-- Pixel grid pattern -->
+                <g opacity="0.1">
+                    <rect x="0" y="0" width="400" height="400" fill="none" stroke="#fff" stroke-width="10"/>
+                    <line x1="100" y1="0" x2="100" y2="400" stroke="#fff" stroke-width="1"/>
+                    <line x1="200" y1="0" x2="200" y2="400" stroke="#fff" stroke-width="1"/>
+                    <line x1="300" y1="0" x2="300" y2="400" stroke="#fff" stroke-width="1"/>
+                    <line x1="0" y1="100" x2="400" y2="100" stroke="#fff" stroke-width="1"/>
+                    <line x1="0" y1="200" x2="400" y2="200" stroke="#fff" stroke-width="1"/>
+                    <line x1="0" y1="300" x2="400" y2="300" stroke="#fff" stroke-width="1"/>
+                </g>
+                
+                <!-- Pixelated A -->
+                <g>
+                    <!-- Top of A -->
+                    <rect x="180" y="100" width="40" height="20" fill="url(#pixelGrad)"/>
+                    <rect x="160" y="120" width="80" height="20" fill="url(#pixelGrad)"/>
+                    <rect x="140" y="140" width="120" height="20" fill="url(#pixelGrad)"/>
+                    <rect x="120" y="160" width="160" height="20" fill="url(#pixelGrad)"/>
+                    <!-- Middle bar -->
+                    <rect x="120" y="180" width="160" height="20" fill="url(#pixelGrad)"/>
+                    <rect x="120" y="200" width="40" height="60" fill="url(#pixelGrad)"/>
+                    <rect x="240" y="200" width="40" height="60" fill="url(#pixelGrad)"/>
+                </g>
+                
+                <!-- Pixel JS text -->
+                <g>
+                    <rect x="140" y="280" width="20" height="20" fill="#4ecdc4"/>
+                    <rect x="140" y="300" width="20" height="20" fill="#4ecdc4"/>
+                    <rect x="140" y="320" width="20" height="20" fill="#4ecdc4"/>
+                    <rect x="160" y="320" width="20" height="20" fill="#4ecdc4"/>
+                    
+                    <rect x="200" y="280" width="40" height="20" fill="#4ecdc4"/>
+                    <rect x="200" y="300" width="20" height="20" fill="#4ecdc4"/>
+                    <rect x="200" y="320" width="40" height="20" fill="#4ecdc4"/>
+                    <rect x="220" y="300" width="20" height="20" fill="#4ecdc4"/>
+                </g>
+                
+                <!-- Bottom name -->
+                <text x="200" y="370" font-family="'Press Start 2P', 'Courier New', monospace" font-size="12" fill="#ff6b6b" text-anchor="middle">AMAN.DEV</text>
+            </svg>
+        </div>
+
+        <!-- Logo 4: Gradient Liquid -->
+        <div class="logo-container">
+            <div class="logo-title">Liquid Gradient</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="liquidGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6a11cb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#2575fc;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="liquidGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f857a6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ff5858;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="liquidGlow">
+                        <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <rect width="400" height="400" fill="#0d0d0d"/>
+                
+                <!-- Liquid blob background -->
+                <ellipse cx="200" cy="200" rx="140" ry="140" fill="url(#liquidGrad1)" filter="url(#liquidGlow)" opacity="0.3">
+                    <animate attributeName="rx" values="140;155;140" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="ry" values="140;125;140" dur="4s" repeatCount="indefinite"/>
+                </ellipse>
+                
+                <!-- Main circle -->
+                <circle cx="200" cy="200" r="120" fill="url(#liquidGrad1)" filter="url(#liquidGlow)"/>
+                
+                <!-- Letter A modern -->
+                <text x="200" y="250" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="140" fill="#fff" text-anchor="middle" font-weight="900">a</text>
+                
+                <!-- Floating elements -->
+                <circle cx="140" cy="140" r="15" fill="url(#liquidGrad2)" opacity="0.8">
+                    <animate attributeName="cy" values="140;130;140" dur="3s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="260" cy="260" r="12" fill="url(#liquidGrad2)" opacity="0.8">
+                    <animate attributeName="cy" values="260;270;260" dur="3.5s" repeatCount="indefinite"/>
+                </circle>
+                
+                <!-- Bottom text with gradient -->
+                <text x="200" y="350" font-family="'Helvetica Neue', sans-serif" font-size="24" fill="url(#liquidGrad2)" text-anchor="middle" font-weight="700">aman.dev.js</text>
+            </svg>
+        </div>
+    </div>
+    
+    <p class="download-hint">💾 Right-click any logo to save • Choose the one that represents your style!</p>
+</body>
+</html>
+</body>
+</html>

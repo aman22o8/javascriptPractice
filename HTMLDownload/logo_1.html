@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#0a0a0a"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7df1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0db4f;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61dafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4fa3d1;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer hexagon frame -->
+  <polygon points="200,50 320,115 320,245 200,310 80,245 80,115" 
+           fill="none" 
+           stroke="url(#accentGradient)" 
+           stroke-width="3"
+           opacity="0.6"/>
+  
+  <!-- Inner shield/badge shape -->
+  <path d="M 140 120 L 200 90 L 260 120 L 260 230 L 200 270 L 140 230 Z" 
+        fill="url(#mainGradient)" 
+        filter="url(#glow)"/>
+  
+  <!-- Letter A with modern geometric style -->
+  <path d="M 200 140 L 230 200 L 220 200 L 215 188 L 185 188 L 180 200 L 170 200 Z M 200 155 L 188 183 L 212 183 Z" 
+        fill="#0a0a0a" 
+        stroke="#0a0a0a" 
+        stroke-width="1"/>
+  
+  <!-- JS brackets -->
+  <text x="165" y="235" 
+        font-family="'Courier New', monospace" 
+        font-size="32" 
+        font-weight="bold" 
+        fill="#0a0a0a">{}</text>
+  
+  <!-- Decorative code elements -->
+  <circle cx="145" cy="150" r="3" fill="#61dafb" opacity="0.8"/>
+  <circle cx="255" cy="150" r="3" fill="#61dafb" opacity="0.8"/>
+  <circle cx="145" cy="210" r="3" fill="#61dafb" opacity="0.8"/>
+  <circle cx="255" cy="210" r="3" fill="#61dafb" opacity="0.8"/>
+  
+  <!-- Bottom text -->
+  <text x="200" y="335" 
+        font-family="'SF Mono', 'Monaco', 'Consolas', monospace" 
+        font-size="20" 
+        font-weight="600" 
+        fill="url(#mainGradient)" 
+        text-anchor="middle">aman.dev.js</text>
+  
+  <!-- Subtle accent line -->
+  <line x1="130" y1="345" x2="270" y2="345" 
+        stroke="url(#accentGradient)" 
+        stroke-width="2" 
+        opacity="0.5"/>
+</svg>
+</body>
+</html>
+

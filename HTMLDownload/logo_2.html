@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Options</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        h2 {
+            color: #f7df1e;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        .logo-container {
+            background: #2a2a2a;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        
+        .logo-title {
+            color: #61dafb;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .download-hint {
+            color: #888;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Choose Your Logo Style</h2>
+    
+    <div class="grid">
+        <!-- Logo 1: Minimalist Terminal -->
+        <div class="logo-container">
+            <div class="logo-title">Minimalist Terminal</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00cc6a;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <rect width="400" height="400" fill="#0d1117"/>
+                
+                <!-- Terminal window -->
+                <rect x="60" y="80" width="280" height="240" rx="12" fill="#1a1f2e" stroke="url(#grad1)" stroke-width="2"/>
+                
+                <!-- Terminal dots -->
+                <circle cx="85" cy="105" r="5" fill="#ff5f56"/>
+                <circle cx="105" cy="105" r="5" fill="#ffbd2e"/>
+                <circle cx="125" cy="105" r="5" fill="#27c93f"/>
+                
+                <!-- Terminal prompt -->
+                <text x="85" y="155" font-family="'Courier New', monospace" font-size="24" fill="url(#grad1)" font-weight="bold">$</text>
+                
+                <!-- Name in terminal -->
+                <text x="110" y="155" font-family="'Courier New', monospace" font-size="24" fill="#c9d1d9">aman</text>
+                
+                <!-- Cursor -->
+                <rect x="198" y="137" width="12" height="22" fill="url(#grad1)">
+                    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+                </rect>
+                
+                <!-- JS Code snippet -->
+                <text x="85" y="200" font-family="'Courier New', monospace" font-size="16" fill="#79c0ff">const</text>
+                <text x="145" y="200" font-family="'Courier New', monospace" font-size="16" fill="#c9d1d9">dev =</text>
+                <text x="213" y="200" font-family="'Courier New', monospace" font-size="16" fill="#a5d6ff">"js"</text>
+                
+                <text x="85" y="235" font-family="'Courier New', monospace" font-size="16" fill="#ff7b72">function</text>
+                <text x="177" y="235" font-family="'Courier New', monospace" font-size="16" fill="#d2a8ff">code</text>
+                <text x="233" y="235" font-family="'Courier New', monospace" font-size="16" fill="#c9d1d9">()</text>
+                
+                <!-- Bottom text -->
+                <text x="200" y="360" font-family="'SF Mono', monospace" font-size="18" fill="url(#grad1)" text-anchor="middle" font-weight="600">aman.dev.js</text>
+            </svg>
+        </div>
+
+        <!-- Logo 2: Bold Geometric -->
+        <div class="logo-container">
+            <div class="logo-title">Bold Geometric</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2b" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <rect width="400" height="400" fill="#0a0a0a"/>
+                
+                <!-- Main circle -->
+                <circle cx="200" cy="200" r="120" fill="url(#grad2)"/>
+                
+                <!-- Letter A cut out style -->
+                <path d="M 200 140 L 240 220 L 220 220 L 213 204 L 187 204 L 180 220 L 160 220 Z M 200 165 L 190 192 L 210 192 Z" fill="#0a0a0a"/>
+                
+                <!-- Decorative elements -->
+                <path d="M 85 200 Q 85 120, 140 100" fill="none" stroke="url(#grad2b)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                <path d="M 315 200 Q 315 120, 260 100" fill="none" stroke="url(#grad2b)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+                
+                <!-- JS indicator -->
+                <circle cx="240" cy="160" r="20" fill="url(#grad2b)"/>
+                <text x="240" y="168" font-family="'Arial', sans-serif" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">JS</text>
+                
+                <!-- Bottom text -->
+                <text x="200" y="355" font-family="'Arial', sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="700">AMAN.DEV</text>
+            </svg>
+        </div>
+
+        <!-- Logo 3: Code Bracket Style -->
+        <div class="logo-container">
+            <div class="logo-title">Code Bracket Style</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f7df1e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f0db4f;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <rect width="400" height="400" fill="#1a1a1a"/>
+                
+                <!-- Left bracket -->
+                <path d="M 120 120 L 90 120 L 90 280 L 120 280" fill="none" stroke="url(#grad3)" stroke-width="8" stroke-linecap="round"/>
+                <path d="M 105 150 L 80 200 L 105 250" fill="none" stroke="url(#grad3)" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+                
+                <!-- Right bracket -->
+                <path d="M 280 120 L 310 120 L 310 280 L 280 280" fill="none" stroke="url(#grad3)" stroke-width="8" stroke-linecap="round"/>
+                <path d="M 295 150 L 320 200 L 295 250" fill="none" stroke="url(#grad3)" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+                
+                <!-- Large A -->
+                <text x="200" y="240" font-family="'Arial Black', sans-serif" font-size="140" fill="url(#grad3)" text-anchor="middle" font-weight="900">A</text>
+                
+                <!-- Dot accent -->
+                <circle cx="200" cy="130" r="8" fill="#61dafb"/>
+                
+                <!-- Bottom labels -->
+                <text x="200" y="320" font-family="'Consolas', monospace" font-size="16" fill="#61dafb" text-anchor="middle" font-weight="600">// aman.dev.js</text>
+                <text x="200" y="345" font-family="'Consolas', monospace" font-size="14" fill="#888" text-anchor="middle">JavaScript Developer</text>
+            </svg>
+        </div>
+
+        <!-- Logo 4: Modern Badge -->
+        <div class="logo-container">
+            <div class="logo-title">Modern Badge</div>
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="shadow">
+                        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+                    </filter>
+                </defs>
+                
+                <rect width="400" height="400" fill="#0f0f0f"/>
+                
+                <!-- Rounded square badge -->
+                <rect x="80" y="80" width="240" height="240" rx="50" fill="url(#grad4)" filter="url(#shadow)"/>
+                
+                <!-- Inner dark square -->
+                <rect x="110" y="110" width="180" height="180" rx="30" fill="#0f0f0f"/>
+                
+                <!-- Stylized AJS monogram -->
+                <text x="200" y="215" font-family="'Impact', sans-serif" font-size="90" fill="url(#grad4)" text-anchor="middle" font-weight="900">A</text>
+                
+                <!-- JS subscript -->
+                <text x="245" y="215" font-family="'Arial', sans-serif" font-size="32" fill="url(#grad4)" font-weight="bold">.js</text>
+                
+                <!-- Corner accents -->
+                <circle cx="115" cy="115" r="4" fill="url(#grad4)"/>
+                <circle cx="285" cy="115" r="4" fill="url(#grad4)"/>
+                <circle cx="115" cy="285" r="4" fill="url(#grad4)"/>
+                <circle cx="285" cy="285" r="4" fill="url(#grad4)"/>
+                
+                <!-- Name below -->
+                <text x="200" y="355" font-family="'Arial', sans-serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="700">aman.dev</text>
+            </svg>
+        </div>
+    </div>
+    
+    <p class="download-hint">Right-click on any logo to save it as an image</p>
+</body>
+</html>
+</body>
+</html>

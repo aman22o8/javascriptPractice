@@ -6,3 +6,9 @@ buttonEl.addEventListener("click",(event)=>{
 console.log((event.timeStamp)/1000)
 })
 
+
+
+
+
+
+navigator.geolocation.getCurrentPosition((position)=>{console.log(`The lat: ${position.coords.latitude} the lon : ${position.coords.longitude}`)},(error)=>{console.log(error)})
