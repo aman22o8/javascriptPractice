@@ -69,7 +69,7 @@ function OTPgeneration(length=6){
 
 console.log(OTPgeneration()) 
 
-
+//kinti baar OTP chahiye
 function differentOTP(numberoftimes=4){
     for (let ntimes = 0; ntimes < numberoftimes; ntimes++) {
         
@@ -78,7 +78,7 @@ function differentOTP(numberoftimes=4){
     }
 }
 
-differentOTP(numberoftimes=4)
+differentOTP(numberoftimes=10)
 
 
 /*------------------------------------------------------------------------ */
